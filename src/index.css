@@ -98,12 +98,14 @@ code {
   grid-template-columns: repeat(var(--cols), var(--tile-size));
   grid-gap: 0;
   align-self: flex-start;
+  grid-area: c;
 }
 
 .next-block {
   display: grid;
   grid-template-columns: repeat(4, var(--tile-size));
   align-self: flex-start;
+  grid-area: l;
 }
 
 /* Score Board */
@@ -115,4 +117,8 @@ code {
   border-left-color: var(--button-color-l);
   border-right-color: var(--button-color-r);
   border-bottom-color: var(--button-color-b);
+}
+
+.score-board {
+  grid-area: r;
 }
